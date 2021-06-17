@@ -3,79 +3,128 @@
 <head>
     <meta charset="utf-8" />
     <title>Life Navigators</title>
-    <link rel="stylesheet" href="./styles.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--
+        <link rel="stylesheet" href="./styles.css">
+    -->
+    <script src="./script.js"></script>
 </head>
-<body>
+<body onload="showHide('history')">
 
-    <h1>Life Navigators</h1>
-
-    <div>
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="./CodeTheWay.html">Code The Way</a></li>
-            <li><a href="./HerosForHealthcare.html">Heros For Healthcare</a></li>
-            <li><a href="./LifeNavigators.html">Life Navigators</a></li>
-            <li><a href="./Media.html">Media</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>Our Mission</h3>
-        <p>The mission of Life Navigators is to improve the quality of life for individuals with developmental and related disabilities, their families, and the community through information, education, advocacy and life planning services.</p>
-    </div>
-
-    <div>
-        <h3>Our Vision</h3>
-        <p>Life Navigators envisions an inclusive community where individuals with disabilities and their support networks experience full participation and maximized independence. Our community will value the rights, hopes, dreams and contributions of all people with disabilities.</p>
-    </div>
-
-    <div>
-        <div>
-            <h3>Our History</h3>
-            <p>Life Navigators was founded by parents who were committed to developing programs and educational opportunities for their children with intellectual and developmental disabilities.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>
+                    Life Navigators
+                </h1>
+            </div>
         </div>
 
-        <div>
-            <div>
-                <h4>1949</h4>
-                <p>Concerned families founded the organization.</p>
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="./CodeTheWay.html">Code The Way</a>
             </div>
-
-            <div>
-                <h4>1950's</h4>
-                <p>Initiated first day school for school–aged children with severe developmental disabilities.</p>
+            <div class="col-sm-3">
+                <a href="./HerosForHealthcare.html">Heros For Healthcare</a>
             </div>
-
-            <div>
-                <h4>1960’s</h4>
-                <p>Started Milwaukee’s first Information and Referral Program focused on Disability Services.</p>
+            <div class="col-sm-3">
+                <a href="./LifeNavigators.html">Life Navigators</a>
             </div>
-
-            <div>
-                <h4>1970's</h4>
-                <p>Initiated Wisconsin’s first Citizen Advocacy Program matching individuals with disabilities with community volunteers for peer and social support.</p>
-                <p>Became the first Corporate Guardianship provider in Milwaukee County to be licensed by the State of Wisconsin.</p>
+            <div class="col-sm-3">
+                <a href="./Media.html">Media</a>
             </div>
+        </div>
+    </div>
 
-            <div>
-                <h4>1980's</h4>
-                <p>Hosted the first Challenger Golf Outing to raise funds from individuals and corporations to support programs.</p>
-                <p>Designated as regional site of the National On–The–Job Training Project to develop community–based employment opportunities for persons with disabilities.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>
+                            Our Mission
+                        </h3>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>
+                            The mission of Life Navigators is to improve the quality of life for individuals with developmental and related disabilities, their families, and the community through information, education, advocacy and life planning services.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>Our Vision</h3>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>Life Navigators envisions an inclusive community where individuals with disabilities and their support networks experience full participation and maximized independence. Our community will value the rights, hopes, dreams and contributions of all people with disabilities.</p>
+                    </div>
+                </div>
             </div>
-
-            <div>
-                <h4>1990's</h4>
-                <p>Initiated Milwaukee’s first Trust Program, which allowed families to plan for the financial future of their loved one with a disability.</p>
+            <div class="col-sm-5">
+                <img src="../LifeNavigatorsResources/LifeNavigators1.jpg" alt="" height="75%" width="75%">
             </div>
-
-            <div>
-                <h4>2000's</h4>
-                <p>Purchased and renovated a new home for our offices located at 7203 West Center Street, Wauwatosa, Wisconsin.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button onclick="showHide('history')">Show History</button>
             </div>
-
-            <div>
-                <h4>2010's</h4>
-                <p>Expanded the Trust Program by offering a second trust option, the Trust II Pooled Trust.</p>
+        </div>
+        <div class="row" id="history">
+            <div class="col-sm-3">
+                <h3>Our History</h3>
+            </div>
+            <div class="col-sm-9">
+                <p>Life Navigators was founded by parents who were committed to developing programs and educational opportunities for their children with intellectual and developmental disabilities.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <h4>1949</h4>
+                    <p>Concerned families founded the organization.</p>
+                </div>
+    
+                <div>
+                    <h4>1950's</h4>
+                    <p>Initiated first day school for school–aged children with severe developmental disabilities.</p>
+                </div>
+    
+                <div>
+                    <h4>1960’s</h4>
+                    <p>Started Milwaukee’s first Information and Referral Program focused on Disability Services.</p>
+                </div>
+    
+                <div>
+                    <h4>1970's</h4>
+                    <p>Initiated Wisconsin’s first Citizen Advocacy Program matching individuals with disabilities with community volunteers for peer and social support.</p>
+                    <p>Became the first Corporate Guardianship provider in Milwaukee County to be licensed by the State of Wisconsin.</p>
+                </div>
+    
+                <div>
+                    <h4>1980's</h4>
+                    <p>Hosted the first Challenger Golf Outing to raise funds from individuals and corporations to support programs.</p>
+                    <p>Designated as regional site of the National On–The–Job Training Project to develop community–based employment opportunities for persons with disabilities.</p>
+                </div>
+    
+                <div>
+                    <h4>1990's</h4>
+                    <p>Initiated Milwaukee’s first Trust Program, which allowed families to plan for the financial future of their loved one with a disability.</p>
+                </div>
+    
+                <div>
+                    <h4>2000's</h4>
+                    <p>Purchased and renovated a new home for our offices located at 7203 West Center Street, Wauwatosa, Wisconsin.</p>
+                </div>
+    
+                <div>
+                    <h4>2010's</h4>
+                    <p>Expanded the Trust Program by offering a second trust option, the Trust II Pooled Trust.</p>
+                </div>
             </div>
         </div>
     </div>

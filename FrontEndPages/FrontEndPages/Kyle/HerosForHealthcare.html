@@ -3,43 +3,89 @@
 <head>
     <meta charset="utf-8" />
     <title>Heros For Healthcare</title>
-    <link rel="stylesheet" href="./styles.css">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--
+        <link rel="stylesheet" href="./styles.css">
+    -->
+    <script src="./script.js"></script>
 </head>
-<body>
+<body onload="showHide('message')">
 
-    <img src="../HeroesForHealthcareResources/Heroes1.png" alt="Heros For Healthcare">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="../HeroesForHealthcareResources/Heroes1.png" alt="Heros For Healthcare">
+            </div>
+            <div class="col-sm-10">
+                <h1>
+                    Heros for Healthcare
+                </h1>
+            </div>
+        </div>
 
-    <div>
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="./CodeTheWay.html">Code The Way</a></li>
-            <li><a href="./HerosForHealthcare.html">Heros For Healthcare</a></li>
-            <li><a href="./LifeNavigators.html">Life Navigators</a></li>
-            <li><a href="./Media.html">Media</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="./CodeTheWay.html">Code The Way</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="./HerosForHealthcare.html">Heros For Healthcare</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="./LifeNavigators.html">Life Navigators</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="./Media.html">Media</a>
+            </div>
+        </div>
     </div>
 
-    <div style="display: block; padding-top: 2%;">
-        <h2>Mission</h2>
-        <p>Our non-profit organization is a resource for our military personnel to start a career in healthcare.</p>
-    </div>
-
-    <div style="display: block; padding-top: 1%;">
-        <h2>Unemployed Veterans</h2>
-        <p>Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.</p>
-        <ul>
-            <li>453,000 unemployed veterans in 2016</li>
-            <li>Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</li>
-        </ul>
-        <img src="../HeroesForHealthcareResources/Heroes2.png" alt="" height="25%" width="25%">
-    </div>
-
-    <div style="display: block; padding-top: 2%;">
-        <h2>Message from the President</h2>
-        <p>I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian.</p>
-        <p>We need supporters like you to help our mission so our service members can get a job and better their lives.</p>
-        <p>After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
-        <img src="../HeroesForHealthcareResources/Heroes3.png" alt="" height="25%" width="25%">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2>Mission</h2>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>Our non-profit organization is a resource for our military personnel to start a career in healthcare.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2>Unemployed Veterans</h2>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.</p>
+                        <ul>
+                            <li>453,000 unemployed veterans in 2016</li>
+                            <li>Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button onclick="showHide('message')">View a message from the President</button>
+                    </div>
+                </div>
+                <div class="row" id="message">
+                    <div class="col-sm-3">
+                        <h2>Message from the President</h2>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian.</p>
+                        <p>We need supporters like you to help our mission so our service members can get a job and better their lives.</p>
+                        <p>After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src="../HeroesForHealthcareResources/Heroes2.png" alt="" height="75%" width="75%">
+            </div>
+        </div>
     </div>
 </body>
 </html>
