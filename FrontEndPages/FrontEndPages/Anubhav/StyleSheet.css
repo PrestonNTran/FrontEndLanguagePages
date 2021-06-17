@@ -1,10 +1,32 @@
 ﻿
 body{
-    font-family: Cambria;
+    font-family: Calibri;
 }
 u{
     font-size: 150%;
 }
 li {
-    padding-top: 1%;
+    padding-bottom: 1%;
+}
+b {
+    font-size: 115%;
+}
+h2 {
+    font-size: 150%;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+ul {
+    margin-top: 0;
+    margin-bottom:1%;
+}
+img {
+    padding:1%;
+}
+a{
+    text-decoration: none;
 }
