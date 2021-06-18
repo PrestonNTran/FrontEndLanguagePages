@@ -3,37 +3,55 @@
 <head>
     <meta charset="utf-8" />
     <title>Heros For Healthcare</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="../Anubhav/JavaScript1.js"></script>
 </head>
 <body>
-    <h1 align="center">Heroes for Healthcare</h1>
-    <div Mission>
-        <u>Mission</u>
-        <p>Our non-profit organization is a resource for our military personnel to start a career in healthcare.</p>
-    </div>
-    <div UnemployedVeterans>
-        <u>Unemployed Veterans</u>
-        <p>Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.</p>
-        <ul>
-            <li>453,000 unemployed veterans in 2016</li>
-            <li>Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</li>
-        </ul>
-    </div>
-    <div MsgPresident">
-        <u>Message from the President</u>
-        <p>I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian.</p>
-        <p>We need supporters like you to help our mission so our service members can get a job and better their lives.</p>
-        <p>After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
-    </div>
-    <div align="center">
+    <div class="container-fluid">
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4>Mission</h4>
+                </div>
+                <div class="col-sm-9">
+                    <p>Our non-profit organization is a resource for our military personnel to start a career in healthcare.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4>Unemployed Vets</h4>
+                </div>
+                <div class="col-sm-9">
+                    <p>Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.</p>
+                    <ul>
+                        <li>453,000 unemployed veterans in 2016</li>
+                        <li>Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <img src="../HeroesForHealthcareResources/Heroes2.png" alt="" />
+        </div>
 
-        <img src="C:\Users\Anubhav Parida\Desktop\ctw 2020 repo\FrontEndLanguagePages\FrontEndPages\FrontEndPages\HeroesForHealthcareResources\Heroes1.png" alt=""/>
+        <div class="row">
+            <button onclick="showHide()">Show Message</button>
+        </div>
+        <div class="row" id="message">
+            <div class="col-sm-3">
+                <h4>Message: </h4>
+            </div>
+            <div class="col-sm-9">
+                <u>Message from the President</u>
+                <p>I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian.</p>
+                <p>We need supporters like you to help our mission so our service members can get a job and better their lives.</p>
+                <p>After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
+            </div>
+        </div>
     </div>
-    <div align="center">
 
-        <img src="C:\Users\Anubhav Parida\Desktop\ctw 2020 repo\FrontEndLanguagePages\FrontEndPages\FrontEndPages\HeroesForHealthcareResources\Heroes2.png" alt=""/>
-    </div>
-    <div align="center">
-        <img src="C:\Users\Anubhav Parida\Desktop\ctw 2020 repo\FrontEndLanguagePages\FrontEndPages\FrontEndPages\HeroesForHealthcareResources\Heroes3.png" alt=""/>
-    </div>
 </body>
 </html>
